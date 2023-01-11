@@ -227,8 +227,20 @@ header h1 {
   background-color: var(--light);
 }
 
+.card:hover {
+  color: var(--white);
+
+  background-color: var(--main);
+}
+
 .card h3 {
   margin: 0;
+
+  font-weight: normal;
+}
+
+.card:hover h3 {
+  color: var(--white);
 }
 
 .number {
