@@ -53,6 +53,8 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--primary);
+  font-weight: normal;
   font-family: Neucha, serif;
   line-height: 1.2em;
 }
@@ -67,6 +69,10 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+a {
+  color: var(--blue);
 }
 
 .container {
@@ -147,8 +153,12 @@ h3 {
   content: '';
 }
 
-.text-orange {
-  color: var(--primary);
+.text-dark {
+  color: var(--dark);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .mb-20 {
@@ -161,10 +171,21 @@ h3 {
   margin-bottom: 30px;
 }
 
+.mb-40 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .flex-sb {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.flex-col-jcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .shadow {
@@ -199,7 +220,6 @@ header h1 {
 
 .btn {
   display: inline-block;
-  margin-top: 24px;
   padding: 12px 24px;
 
   color: var(--white);
@@ -229,8 +249,6 @@ header h1 {
 .nav-section h2 {
   width: 350px;
 
-  color: var(--white);
-  font-weight: normal;
   font-size: 52px;
 }
 
@@ -253,13 +271,15 @@ header h1 {
 }
 
 .card h3 {
-  margin: 0;
-
-  font-weight: normal;
+  margin-bottom: 16px;
 }
 
 .card:hover h3 {
   color: var(--white);
+}
+
+.card p {
+  margin: 0;
 }
 
 .number {
@@ -282,6 +302,7 @@ header h1 {
   margin-bottom: 20px;
   padding: 5px 10px;
 
+  font-weight: bold;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
@@ -334,10 +355,77 @@ header h1 {
   color: var(--dark-50);
 } */
 
-.block-main-text h2 {
-  font-weight: normal;
-}
-
 .block-main-text p {
   font-size: 34px;
+}
+
+.form-block {
+  padding: 0 55px;
+}
+
+.form-block p {
+  margin: 0;
+
+  color: var(--white);
+}
+
+.form-title {
+  margin: 54px 0;
+}
+
+.form-subtitle {
+  font-size: 18px;
+}
+
+.form-subtext {
+  font-size: 12px;
+}
+
+.form-subtext a {
+  color: inherit;
+}
+
+.email-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  border: 1px solid #e3e3e3;
+}
+
+.btn-send {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+
+  border: 0;
+
+  cursor: pointer;
+}
+
+.btn-send::before {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url('../images/send.svg');
+
+  content: '';
+}
+
+.contacts {
+  margin-top: 74px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-block form {
+  display: flex;
+
+  margin-top: 9px;
 }

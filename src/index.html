@@ -11,9 +11,7 @@
   <body>
     <header class="bg-img bg-light">
       <div class="container">
-        <h1>
-          <span class="text-orange">Когнитивные<br />искажения<br /></span>в программировании
-        </h1>
+        <h1>Когнитивные<br />искажения<br /><span class="text-dark">в программировании</span></h1>
         <img src="images/main.png" alt="Тота сидит за ноутбуком, окружённый знаками вопроса" class="header-img" />
         <div class="column-container">
           <div class="column">
@@ -28,7 +26,7 @@
               Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере
               продуктивности, багам и бесконечному разочарованию.
             </p>
-            <p>
+            <p class="mb-40">
               Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и
               цикл, а остатки нейтрализовать.
             </p>
@@ -41,7 +39,7 @@
       <section class="video-section">
         <div class="container">
           <h2 class="mb-30">
-            <span class="text-orange">Что же это такое,<br /></span>когнитивные искажения?
+            <span class="text-dark">Что же это такое,<br /></span>когнитивные искажения?
           </h2>
           <p class="mb-30">Что такое когнитивные искажения. Petrovna Channel</p>
           <iframe
@@ -57,7 +55,7 @@
       <section id="navigation" class="nav-section bg-dark">
         <div class="container flex-sb">
           <h2 class="mb-20">
-            <span class="text-orange">5 когнитивных искажений <br /></span>о существовании которых стоит помнить
+            5 когнитивных искажений <br /><span class="text-white">о существовании которых стоит помнить</span>
           </h2>
           <a href="#ikea-effect" class="card mb-20">
             <div class="number">1</div>
@@ -97,7 +95,7 @@
             </div>
             <div class="column block-main-text">
               <div class="block-subtext">Когнитивные искажения</div>
-              <h2 class="mb-30">Эффект ИКЕА</h2>
+              <h2 class="mb-30 text-dark">Эффект ИКЕА</h2>
               <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
             </div>
           </div>
@@ -124,7 +122,7 @@
           <div class="column-container">
             <div class="column block-main-text">
               <div class="block-subtext">Когнитивные искажения</div>
-              <h2 class="mb-30">Преждевременная оптимизация</h2>
+              <h2 class="mb-30 text-white">Преждевременная оптимизация</h2>
               <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
             </div>
             <div class="column">
@@ -156,7 +154,7 @@
             </div>
             <div class="column block-main-text">
               <div class="block-subtext">Когнитивные искажения</div>
-              <h2 class="mb-30">Искажение новизны</h2>
+              <h2 class="mb-30 text-dark">Искажение новизны</h2>
               <p>
                 Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.
               </p>
@@ -184,7 +182,7 @@
           <div class="column-container">
             <div class="column block-main-text">
               <div class="block-subtext">Когнитивные искажения</div>
-              <h2 class="mb-30">Гиперболическое обесценивание</h2>
+              <h2 class="mb-30 text-white">Гиперболическое обесценивание</h2>
               <p>
                 Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но
                 доступную в будущем.
@@ -224,7 +222,7 @@
             </div>
             <div class="column block-main-text">
               <div class="block-subtext">Когнитивные искажения</div>
-              <h2 class="mb-30">Ошибка планирования</h2>
+              <h2 class="mb-30 text-dark">Ошибка планирования</h2>
               <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
             </div>
           </div>
@@ -248,7 +246,39 @@
       </section>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        <div class="bg-dark form-block">
+          <div class="column-container">
+            <div class="column">
+              <h3 class="form-title text-white">Хотите узнать больше?<br />Подпишитесь на обновления</h3>
+            </div>
+            <div class="column flex-col-jcc">
+              <p class="form-subtitle">Электронная почта</p>
+              <form action="" method="post">
+                <input
+                  type="email"
+                  class="email-input"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Ваша электронная почта"
+                />
+                <button type="submit" class="btn btn-send"></button>
+              </form>
+              <p class="form-subtext">Подписываясь, вы принимаете <a href="#">правила сервиса</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <p>© 2023 Андрей Коротеев</p>
+          <p>
+            По материалам статьи
+            <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"
+              >Yash Ranadive Cognitive Biases in Programming</a
+            >
+          </p>
+          <a href="https://ru.hexlet.io/">Курсы программирования Hexlet</a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
