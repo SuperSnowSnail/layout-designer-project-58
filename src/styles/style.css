@@ -53,6 +53,8 @@ body {
 h1,
 h2,
 h3 {
+  margin: 0;
+
   color: var(--primary);
   font-weight: normal;
   font-family: Neucha, serif;
@@ -162,17 +164,14 @@ a {
 }
 
 .mb-20 {
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
 .mb-30 {
-  margin-top: 0;
   margin-bottom: 30px;
 }
 
 .mb-40 {
-  margin-top: 0;
   margin-bottom: 40px;
 }
 
@@ -288,6 +287,10 @@ header h1 {
   font-size: 64px;
   font-family: Neucha, serif;
   line-height: 1;
+}
+
+.block p {
+  margin: 0;
 }
 
 .block-img {
